@@ -1,116 +1,114 @@
-# 🏦 Bank Management System using PostgreSQL
+# Bank Management System – PostgreSQL
 
-## 📌 Overview
+A relational database project built using PostgreSQL to simulate the core database operations of a banking system.
 
-This project is a relational database system for a banking environment designed using PostgreSQL. It demonstrates database design, normalization, constraints, SQL queries, and PostgreSQL concepts used in real-world banking applications.
+The project demonstrates database design, normalization, relationships, constraints, SQL querying, and intermediate-to-advanced PostgreSQL concepts.
 
-The project was built as part of my PostgreSQL Administration and Database Support learning journey.
+## Project Overview
 
----
+The system is designed to manage:
 
-## ✨ Features
+- Customers
+- Bank branches
+- Customer accounts
+- Employees
+- Loans
+- Cards
+- Beneficiaries
+- Bank transactions
 
-- Customer Management
-- Branch Management
-- Employee Management
-- Account Management
-- Loan Management
-- Card Management
-- Beneficiary Management
-- Transaction Management
-- Primary & Foreign Keys
-- Constraints
-- Relational Database Design
+The database was designed and implemented using PostgreSQL and tested through pgAdmin.
 
----
-
-## 🛠 Technologies Used
+## Technologies Used
 
 - PostgreSQL
+- pgAdmin
 - SQL
-- pgAdmin 4
-- Linux
-- AWS EC2
-- Git & GitHub
+- Git / GitHub
 
----
+## Database Design
 
-## 🗂 Database Schema
+The database contains 8 main entities:
 
-The database contains the following tables:
+1. Customer
+2. Branch
+3. Account
+4. Employee
+5. Loan
+6. Card
+7. Beneficiary
+8. Bank Transaction
 
-- Branch
-- Customer
-- Employee
-- Account
-- Loan
-- Card
-- Beneficiary
-- Bank Transaction
+The schema uses:
 
----
-
-## 📊 Entity Relationship Diagram
-
-![ER Diagram](ER-Diagram/bank_er_diagram.png)
-
----
-
-## 📂 Repository Structure
-
-```
-Bank-Management-System-PostgreSQL
-│
-├── Database
-│   ├── create_tables.sql
-│   ├── insert_branch.sql
-│   ├── insert_customer.sql
-│   ├── insert_employee.sql
-│   ├── insert_account.sql
-│   ├── insert_loan.sql
-│   ├── insert_card.sql
-│   ├── insert_beneficiary.sql
-│   └── insert_bank_transaction.sql
-│
-├── ER-Diagram
-│
-└── README.md
-```
-
----
-
-## 💡 SQL Concepts Covered
-
-- DDL
-- DML
 - Primary Keys
 - Foreign Keys
-- Constraints
-- Data Types
-- Relational Database Design
+- UNIQUE constraints
+- DEFAULT constraints
+- Referential relationships
+- One-to-Many relationships
 
----
+## Entity Relationship Diagram
 
-## 🚀 Upcoming Enhancements
+![Bank Management System ER Diagram](ER-Diagram/bank_er_diagram.png)
 
-- SQL Joins
-- Aggregate Functions
-- GROUP BY & HAVING
-- Window Functions
-- Common Table Expressions (CTEs)
-- Views
+## SQL Concepts Demonstrated
+
+The project includes practical examples of:
+
+- SELECT queries
+- Filtering and sorting
+- JOINs
+- GROUP BY
+- HAVING
 - Subqueries
-- Backup & Restore
-- PostgreSQL Administration
-- Linux Administration
-- AWS EC2 Deployment
+- Common Table Expressions (CTEs)
+- Window Functions
+- Views
+- Aggregate Functions
+- Constraints
+- Primary Keys
+- Foreign Keys
+- UNIQUE constraints
+- DEFAULT values
 
----
+Additional PostgreSQL concepts studied alongside the project include:
 
-## 👨‍💻 Author
+- MVCC
+- VACUUM
+- WAL
+- Indexes
+- Backup and Restore
+- Roles and Permissions
+- GRANT
+- REVOKE
 
-**Atharva Phatak**
+## Project Structure
 
-B.Sc. Computer Science
-
-Aspiring PostgreSQL Database Administrator | Linux | AWS | SQL
+```text
+Bank-Management-System-PostgreSQL/
+│
+├── Database/
+│   ├── create_tables.sql
+│   ├── 03_insert_branch.sql
+│   ├── 04_insert_customer.sql
+│   ├── 05_insert_employee.sql
+│   ├── 06_insert_account.sql
+│   ├── 07_insert_loan.sql
+│   ├── 08_insert_card.sql
+│   ├── 09_insert_beneficiary.sql
+│   └── 10_insert_bank_transaction.sql
+│
+├── ER-Diagram/
+│   └── bank_er_diagram.png
+│
+├── SQL-Examples/
+│   ├── 01_Joins.sql
+│   ├── 02_GroupBy_Having.sql
+│   ├── 03_Subqueries.sql
+│   ├── 04_CTE.sql
+│   ├── 05_Window_Functions.sql
+│   └── 06_Views.sql
+│
+├── README.md
+└── LICENSE
